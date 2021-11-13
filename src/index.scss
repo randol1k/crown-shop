@@ -16,7 +16,7 @@ body {
   font-size: 1.6rem;
   max-width: 144rem;
   margin: 0 auto;
-  padding: 4rem 6rem;
+  padding: 0rem 6rem 4rem;
   font-family: "Open Sans Condensed", sans-serif;
   color: vars.$color-black;
 }
@@ -28,6 +28,6 @@ a {
 
 @media screen and(max-width: vars.$screen-medium) {
   body {
-    padding: 1.5rem;
+    padding: 0rem 1.5rem;
   }
 }
