@@ -1,0 +1,35 @@
+@use "src/_variables.scss" as vars;
+
+.collectionView {
+  margin-bottom: 5rem;
+
+  h3 {
+    font-size: 3.5rem;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .collectionContainer {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(12rem, 1fr));
+    gap: 2rem;
+  }
+
+  .fullCollection {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: vars.$screen-medium) {
+  .collectionView {
+    h3 {
+      font-size: 3rem;
+    }
+
+    .collectionContainer {
+      gap: 1rem;
+      row-gap: 4rem;
+      grid-template-columns: repeat(2, minmax(15rem, 1fr));
+    }
+  }
+}

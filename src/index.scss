@@ -1,0 +1,33 @@
+@use "src/_variables.scss" as vars;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; // 10px
+}
+
+body {
+  font-size: 1.6rem;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 4rem 6rem;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: vars.$color-black;
+}
+
+a {
+  text-decoration: none;
+  color: vars.$color-black;
+}
+
+@media screen and(max-width: vars.$screen-medium) {
+  body {
+    padding: 1.5rem;
+  }
+}

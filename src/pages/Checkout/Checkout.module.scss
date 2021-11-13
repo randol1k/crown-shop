@@ -1,0 +1,72 @@
+@use "src/_variables.scss" as vars;
+
+.emptyCartMessage {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.checkout {
+  width: 80%;
+  margin: 0 auto;
+
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid vars.$color-black;
+
+    span {
+      text-align: center;
+      width: 100%;
+      font-size: 2.2rem;
+    }
+
+    .product {
+      flex-basis: 20%;
+    }
+    .description {
+      flex-basis: 35%;
+    }
+    .quantity {
+      flex-basis: 20%;
+    }
+    .price,
+    .remove {
+      flex-basis: 5%;
+    }
+  }
+
+  .total {
+    border-top: 1px solid vars.$color-black;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    text-align: right;
+    font-size: 3rem;
+  }
+
+  .stripeContainer {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and(max-width: vars.$screen-medium) {
+  .emptyCartMessage {
+    font-size: 2.5rem;
+  }
+
+  .checkout {
+    width: 100%;
+
+    .headerContainer {
+      span {
+        font-size: 2rem;
+      }
+    }
+
+    .total {
+      font-size: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@use "src/_variables.scss" as vars;
+
+.cart {
+  padding: 1rem 2rem;
+
+  .emptyCartMessage {
+    text-align: center;
+  }
+
+  a {
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid vars.$color-black;
+    background-color: vars.$color-black;
+    color: vars.$color-white;
+    transition: all 0.3s;
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+
+    &:hover {
+      background-color: vars.$color-white;
+      color: vars.$color-black;
+    }
+  }
+}
+
+@media screen and(max-width: vars.$screen-medium) {
+  .cart {
+    padding: 1rem;
+
+    a {
+      padding: 0.5rem 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use "src/_variables.scss" as vars;
+
+.addBtn {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 1;
+  transform: translate(-50%, -25%);
+  min-width: 60%;
+  background-color: vars.$color-black;
+  border: none;
+  color: vars.$color-white;
+  font-size: 1.6rem;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding: 1rem 0;
+  opacity: 0.8;
+
+  &:not(:hover) {
+    display: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: vars.$color-white;
+    color: vars.$color-black;
+  }
+
+  &.addedToCart {
+    background-color: vars.$color-white;
+    color: inherit;
+    display: inline-block;
+  }
+}

@@ -1,0 +1,16 @@
+@use "src/_variables.scss" as vars;
+
+.qtyBtn {
+  cursor: pointer;
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: rgba(vars.$color-black, 0.1);
+}
+
+@media screen and (max-width: vars.$screen-medium) {
+  .qtyBtn {
+    // Important is necessary to implement the styles on Cart widget
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+}
